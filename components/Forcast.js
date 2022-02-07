@@ -6,7 +6,7 @@ const Forcast =(props)=> {
             {props.country && props.city && <p>Location:
             {props.city}, {props.country}</p>}
             {props.temperature && <p>Temperature: 
-            {props.temperature}</p>}
+            {props.temperature-273.15}</p>}
             {props.humidity && <p>Humidity: {props.humidity}</p>}
             {props.pressure && <p>Pressure: {props.pressure}</p>}
             {props.icon && <img src= {`https://api.openweathermap.org/img/w/${props.icon}.png`} alt= "weather icon" />}
