@@ -3,7 +3,7 @@ import './App.css';
 import Heading from './components/Heading';
 import Form from './components/Form';
 import Forcast from './components/Forcast';
-
+//openweather api key
 const api_key = "a65f66a9a65c56628bed8dcca26654e2";
 
  class App extends Component {
@@ -18,7 +18,7 @@ const api_key = "a65f66a9a65c56628bed8dcca26654e2";
     description:"",
     error:"",
   }
-  
+  //function to get weather info from the api
   getWeather = async (e) =>{
     const city = e.target.elements.city.value
     const country = e.target.elements.country.value
