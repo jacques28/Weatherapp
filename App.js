@@ -7,7 +7,7 @@ import Forcast from './components/Forcast';
 const api_key = "a65f66a9a65c56628bed8dcca26654e2";
 
  class App extends Component {
-
+  
   state={
    temperature:"",
     city:"",
@@ -43,8 +43,10 @@ const api_key = "a65f66a9a65c56628bed8dcca26654e2";
       })
     }
   }
+  
 
   render() {
+    
     return (
       <div className="App">
         <h1>Forcast</h1>
